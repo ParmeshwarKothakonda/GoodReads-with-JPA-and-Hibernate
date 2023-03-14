@@ -11,7 +11,7 @@ public interface BookRepository {
     
     Book addBook(Book book);
     
-    String addMultipleBooks(ArrayList<Book> givenMultipleBooks);
+    String addMultipleBooks(ArrayList<Book> multipleBooks);
     
     Book updateBook(int bookId, Book book);
     
