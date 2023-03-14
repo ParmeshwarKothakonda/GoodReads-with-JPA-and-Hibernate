@@ -87,11 +87,14 @@ Creates a new book in the `book`. `id` is auto-incremented.
 }
 ```
 
-API 3
-Path: /books/bulk
-Method: POST
+### API 3
+
+#### Path: `/books/bulk`
+
+#### Method: `POST`
 
 #### Description:
+
 Creates multiple books in the book table and returns a text containing the numbers of books added.
 For example, the below request object contains details of 4 books.
 
@@ -108,6 +111,7 @@ For example, the below request object contains details of 4 books.
     },
     ...
 ]
+---
 
 ####Response
 
