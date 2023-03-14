@@ -34,12 +34,11 @@ class BookController {
     @PostMapping("/books")
     public Book addBook(@RequestBody Book book) {
         return bookService.addBook(book);
-
     }
     
     @PostMapping("/books/bulk")
-    public String addMultipleBooks(@RequestBody ArrayList<Book> givenMultipleBooks) {
-    	return bookService.addMultipleBooks(givenMultipleBooks);
+    public String addMultipleBooks(@RequestBody ArrayList<Book> multipleBooks) {
+    	return bookService.addMultipleBooks(multipleBooks);
     }
     
     @PutMapping("/books/{bookId}")
