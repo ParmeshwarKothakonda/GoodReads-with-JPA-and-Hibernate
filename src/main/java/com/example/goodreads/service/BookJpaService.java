@@ -45,6 +45,17 @@ public class BookJpaService implements BookRepository {
   }
 
     @Override
+    public String addMultipleBooks(ArrayList<Book> givenMultipleBooks) {
+    	int count = givenMultipleBooks.size();
+    	
+    	for(Book eachBook : givenMultipleBooks) {
+    		bookJpaRepository.save(eachBook);
+    	}
+    	
+    	String returnMessage = String.format("Successfully added %d books", count);
+    	return returnMessage;
+    }
+    @Override
   public Book updateBook(int bookId, Book book) {
     try{
         Book newBook = bookJpaRepository.findById(bookId).get();
