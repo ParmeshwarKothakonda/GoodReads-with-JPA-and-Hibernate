@@ -99,7 +99,8 @@ Creates multiple books in the book table and returns a text containing the numbe
 For example, the below request object contains details of 4 books.
 
 #### Request
----
+
+```
 [
     {
         "name": "Ikigai",
@@ -111,9 +112,9 @@ For example, the below request object contains details of 4 books.
     },
     ...
 ]
----
 
-####Response
+```
+#### Request
 
 Successfully added 4 books
 
